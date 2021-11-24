@@ -22,5 +22,5 @@ $users
   
 foreach ($user in $users) {  
    # send-mailmessage -From "admin@touchworks.t1" -To $user.mail  -Subject "Your password will expire in $($user.daystoexpiry) days"   -Body "Your password will expire at $($user.expirydate) (UTC)."  -SmtpServer 'email-smtp.us-east-2.amazonaws.com' -Port '587' -UseSsl
-    Send-MailMessage -To $user.mail -Subject "Your password will expire in $($user.daystoexpiry) days"  -Body "Your password will expire at $($user.expirydate) (UTC)." -From 'olatunji.yusuf@microhealthllc.com ' -SmtpServer 'email-smtp.us-east-2.amazonaws.com' -Port '587' -UseSsl -Credential $Cred 
+    Send-MailMessage -To $user.mail -Subject "Your password will expire in $($user.daystoexpiry) days"  -Body "Your password will expire at $($user.expirydate) (UTC)." -From ' ' -SmtpServer '' -Port '587' -UseSsl -Credential $Cred 
 } 
